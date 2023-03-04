@@ -5,6 +5,7 @@ namespace Pizzeria.Pages.Forms
 {
     public class CustomPizzaModel : PageModel
     {
+        public PizzaModel Pizza { get; set; }
         public void OnGet()
         {
         }
