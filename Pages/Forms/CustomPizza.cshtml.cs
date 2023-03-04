@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Pizzeria.Models;
 
 namespace Pizzeria.Pages.Forms
 {
     public class CustomPizzaModel : PageModel
     {
-        public PizzaModel Pizza { get; set; }
+        [BindProperty]
+        public PizzasModel Pizza { get; set; }
         public void OnGet()
         {
         }
